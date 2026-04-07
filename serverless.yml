@@ -1,0 +1,28 @@
+service: my-service
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+  region: ap-south-1
+
+functions:
+  hello:
+    handler: handlers/handler.hello
+    events:
+      - httpApi:
+          path: /
+          method: get
+
+  health:
+    handler: handlers/handler.health
+    events:
+      - httpApi:
+          path: /health
+          method: get
+
+  users:
+    handler: handlers/handler.users
+    events:
+      - httpApi:
+          path: /users
+          method: get
