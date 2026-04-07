@@ -1,0 +1,15 @@
+{
+  "name": "clean-serverless",
+  "version": "1.0.0",
+  "description": "## Tech Stack - AWS Lambda - API Gateway - Serverless Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.1025.0"
+  }
+}

@@ -5,6 +5,16 @@ provider:
   runtime: nodejs20.x
   region: ap-south-1
 
+  iam:
+    role:
+      statements:
+        - Effect: Allow
+          Action:
+            - dynamodb:PutItem
+            - dynamodb:GetItem
+            - dynamodb:Scan
+          Resource: "*"
+
 functions:
   hello:
     handler: handlers/handler.hello
@@ -26,3 +36,24 @@ functions:
       - httpApi:
           path: /users
           method: get
+
+  createUser:
+    handler: handlers/handler.createUser
+    events:
+      - httpApi:
+          path: /users
+          method: post
+
+resources:
+  Resources:
+    UsersTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: UsersTable
+        AttributeDefinitions:
+          - AttributeName: id
+            AttributeType: S
+        KeySchema:
+          - AttributeName: id
+            KeyType: HASH
+        BillingMode: PAY_PER_REQUEST
