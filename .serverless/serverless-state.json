@@ -139,7 +139,7 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "serverless-framework-deployments-ap-south-1-6938da3a-6576",
-                "S3Key": "serverless/my-service/dev/1775561045880-2026-04-07T11:24:05.880Z/my-service.zip"
+                "S3Key": "serverless/my-service/dev/1775636425759-2026-04-08T08:20:25.759Z/my-service.zip"
               },
               "Handler": "handlers/handler.hello",
               "Runtime": "nodejs20.x",
@@ -162,7 +162,7 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "serverless-framework-deployments-ap-south-1-6938da3a-6576",
-                "S3Key": "serverless/my-service/dev/1775561045880-2026-04-07T11:24:05.880Z/my-service.zip"
+                "S3Key": "serverless/my-service/dev/1775636425759-2026-04-08T08:20:25.759Z/my-service.zip"
               },
               "Handler": "handlers/handler.health",
               "Runtime": "nodejs20.x",
@@ -185,7 +185,7 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "serverless-framework-deployments-ap-south-1-6938da3a-6576",
-                "S3Key": "serverless/my-service/dev/1775561045880-2026-04-07T11:24:05.880Z/my-service.zip"
+                "S3Key": "serverless/my-service/dev/1775636425759-2026-04-08T08:20:25.759Z/my-service.zip"
               },
               "Handler": "handlers/handler.users",
               "Runtime": "nodejs20.x",
@@ -208,7 +208,7 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "serverless-framework-deployments-ap-south-1-6938da3a-6576",
-                "S3Key": "serverless/my-service/dev/1775561045880-2026-04-07T11:24:05.880Z/my-service.zip"
+                "S3Key": "serverless/my-service/dev/1775636425759-2026-04-08T08:20:25.759Z/my-service.zip"
               },
               "Handler": "handlers/handler.createUser",
               "Runtime": "nodejs20.x",
@@ -226,44 +226,44 @@
               "CreateUserLogGroup"
             ]
           },
-          "HelloLambdaVersioni5RbWxxhb3mhZMwjou6j5RwwGCmNcznUzE7FklJL0Y": {
+          "HelloLambdaVersionvNbJ14YbEfjxespcDSC4ukZRwFRR575aJMUjPb76mE": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "HelloLambdaFunction"
               },
-              "CodeSha256": "O8G7Q6/deiTVprnY7+mAJT5pzRgyE3I6WMJnAy+886g="
+              "CodeSha256": "DA7t/X9iA0p3IElCMMEDuhY/qwtIGTVnY1QcPjzHOmc="
             }
           },
-          "HealthLambdaVersionWDmst3QNwKt0FbNWOOV68MHWZSgmtYg8yLcZHTuNRHg": {
+          "HealthLambdaVersionVogp7D6SKsdfvzDy0wD4xwjVDsZAc0uumfwzCGMPleM": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "HealthLambdaFunction"
               },
-              "CodeSha256": "O8G7Q6/deiTVprnY7+mAJT5pzRgyE3I6WMJnAy+886g="
+              "CodeSha256": "DA7t/X9iA0p3IElCMMEDuhY/qwtIGTVnY1QcPjzHOmc="
             }
           },
-          "UsersLambdaVersionbq6j258Ok25hFryDzGsKD9JvWi5vh1cFjVxHRXysU": {
+          "UsersLambdaVersionLvcM4aWsQUKqSKMZAxycAF9NrCoEtaXrABJkPhBh6jE": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "UsersLambdaFunction"
               },
-              "CodeSha256": "O8G7Q6/deiTVprnY7+mAJT5pzRgyE3I6WMJnAy+886g="
+              "CodeSha256": "DA7t/X9iA0p3IElCMMEDuhY/qwtIGTVnY1QcPjzHOmc="
             }
           },
-          "CreateUserLambdaVersionxVJIROthe0Vja9bCnbuQW2bJPrAquLOBalgTb9jKRg": {
+          "CreateUserLambdaVersionaOwcpXbzKAXlqtctLIxXPxPcXerphbxtzvYxLjiCYew": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "CreateUserLambdaFunction"
               },
-              "CodeSha256": "O8G7Q6/deiTVprnY7+mAJT5pzRgyE3I6WMJnAy+886g="
+              "CodeSha256": "DA7t/X9iA0p3IElCMMEDuhY/qwtIGTVnY1QcPjzHOmc="
             }
           },
           "HttpApi": {
@@ -604,7 +604,7 @@
           "HelloLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "HelloLambdaVersioni5RbWxxhb3mhZMwjou6j5RwwGCmNcznUzE7FklJL0Y"
+              "Ref": "HelloLambdaVersionvNbJ14YbEfjxespcDSC4ukZRwFRR575aJMUjPb76mE"
             },
             "Export": {
               "Name": "sls-my-service-dev-HelloLambdaFunctionQualifiedArn"
@@ -613,7 +613,7 @@
           "HealthLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "HealthLambdaVersionWDmst3QNwKt0FbNWOOV68MHWZSgmtYg8yLcZHTuNRHg"
+              "Ref": "HealthLambdaVersionVogp7D6SKsdfvzDy0wD4xwjVDsZAc0uumfwzCGMPleM"
             },
             "Export": {
               "Name": "sls-my-service-dev-HealthLambdaFunctionQualifiedArn"
@@ -622,7 +622,7 @@
           "UsersLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "UsersLambdaVersionbq6j258Ok25hFryDzGsKD9JvWi5vh1cFjVxHRXysU"
+              "Ref": "UsersLambdaVersionLvcM4aWsQUKqSKMZAxycAF9NrCoEtaXrABJkPhBh6jE"
             },
             "Export": {
               "Name": "sls-my-service-dev-UsersLambdaFunctionQualifiedArn"
@@ -631,7 +631,7 @@
           "CreateUserLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "CreateUserLambdaVersionxVJIROthe0Vja9bCnbuQW2bJPrAquLOBalgTb9jKRg"
+              "Ref": "CreateUserLambdaVersionaOwcpXbzKAXlqtctLIxXPxPcXerphbxtzvYxLjiCYew"
             },
             "Export": {
               "Name": "sls-my-service-dev-CreateUserLambdaFunctionQualifiedArn"
@@ -695,7 +695,7 @@
         "timeout": 6,
         "runtime": "nodejs20.x",
         "vpc": {},
-        "versionLogicalId": "HelloLambdaVersioni5RbWxxhb3mhZMwjou6j5RwwGCmNcznUzE7FklJL0Y"
+        "versionLogicalId": "HelloLambdaVersionvNbJ14YbEfjxespcDSC4ukZRwFRR575aJMUjPb76mE"
       },
       "health": {
         "handler": "handlers/handler.health",
@@ -715,7 +715,7 @@
         "timeout": 6,
         "runtime": "nodejs20.x",
         "vpc": {},
-        "versionLogicalId": "HealthLambdaVersionWDmst3QNwKt0FbNWOOV68MHWZSgmtYg8yLcZHTuNRHg"
+        "versionLogicalId": "HealthLambdaVersionVogp7D6SKsdfvzDy0wD4xwjVDsZAc0uumfwzCGMPleM"
       },
       "users": {
         "handler": "handlers/handler.users",
@@ -735,7 +735,7 @@
         "timeout": 6,
         "runtime": "nodejs20.x",
         "vpc": {},
-        "versionLogicalId": "UsersLambdaVersionbq6j258Ok25hFryDzGsKD9JvWi5vh1cFjVxHRXysU"
+        "versionLogicalId": "UsersLambdaVersionLvcM4aWsQUKqSKMZAxycAF9NrCoEtaXrABJkPhBh6jE"
       },
       "createUser": {
         "handler": "handlers/handler.createUser",
@@ -755,7 +755,7 @@
         "timeout": 6,
         "runtime": "nodejs20.x",
         "vpc": {},
-        "versionLogicalId": "CreateUserLambdaVersionxVJIROthe0Vja9bCnbuQW2bJPrAquLOBalgTb9jKRg"
+        "versionLogicalId": "CreateUserLambdaVersionaOwcpXbzKAXlqtctLIxXPxPcXerphbxtzvYxLjiCYew"
       }
     },
     "resources": {
@@ -785,6 +785,8 @@
     "configValidationMode": "warn",
     "serviceFilename": "serverless",
     "initialServerlessConfig": {
+      "org": "joshdann40",
+      "app": "my-app",
       "service": "my-service",
       "provider": {
         "$ref": "$[\"service\"][\"provider\"]"
@@ -796,13 +798,15 @@
         "$ref": "$[\"service\"][\"resources\"]"
       }
     },
+    "app": "my-app",
     "appId": null,
+    "org": "joshdann40",
     "orgId": null,
     "layers": {},
     "artifact": "/home/ubuntu/serverless-project/clean-serverless/.serverless/my-service.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/my-service/dev/1775561045880-2026-04-07T11:24:05.880Z",
+    "artifactDirectoryName": "serverless/my-service/dev/1775636425759-2026-04-08T08:20:25.759Z",
     "artifact": "my-service.zip"
   }
 }
