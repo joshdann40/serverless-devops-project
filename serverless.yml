@@ -54,7 +54,7 @@ resources:
         TableName: UsersTable
         AttributeDefinitions:
           - AttributeName: id
-            AttributeType: S
+            AttributeType: SS
         KeySchema:
           - AttributeName: id
             KeyType: HASH
