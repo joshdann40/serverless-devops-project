@@ -46,6 +46,6 @@ module.exports.createUser = async () => {
 
   return {
     statusCode: 200,
-    body: JSON.stringify({ message: "User added successfully" }),
+    body: JSON.stringify({ message: "Users added successfully" }),
   };
 };
