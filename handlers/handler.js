@@ -6,7 +6,7 @@ const client = new DynamoDBClient({ region: "ap-south-1" });
 module.exports.hello = async () => {
   return {
     statusCode: 200,
-    body: JSON.stringify({ message: "Hello Joshua 🚀" }),
+    body: JSON.stringify({ message: "Hello Joyana 🚀" }),
   };
 };
 
@@ -48,4 +48,4 @@ module.exports.createUser = async () => {
     statusCode: 200,
     body: JSON.stringify({ message: "Users added successfully" }),
   };
-};
+}g
