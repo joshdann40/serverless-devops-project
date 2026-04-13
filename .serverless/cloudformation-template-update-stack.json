@@ -118,7 +118,7 @@
       "Properties": {
         "Code": {
           "S3Bucket": "serverless-framework-deployments-ap-south-1-6938da3a-6576",
-          "S3Key": "serverless/my-service/dev/1775636425759-2026-04-08T08:20:25.759Z/my-service.zip"
+          "S3Key": "serverless/my-service/dev/1776096895353-2026-04-13T16:14:55.353Z/my-service.zip"
         },
         "Handler": "handlers/handler.hello",
         "Runtime": "nodejs20.x",
@@ -141,7 +141,7 @@
       "Properties": {
         "Code": {
           "S3Bucket": "serverless-framework-deployments-ap-south-1-6938da3a-6576",
-          "S3Key": "serverless/my-service/dev/1775636425759-2026-04-08T08:20:25.759Z/my-service.zip"
+          "S3Key": "serverless/my-service/dev/1776096895353-2026-04-13T16:14:55.353Z/my-service.zip"
         },
         "Handler": "handlers/handler.health",
         "Runtime": "nodejs20.x",
@@ -164,7 +164,7 @@
       "Properties": {
         "Code": {
           "S3Bucket": "serverless-framework-deployments-ap-south-1-6938da3a-6576",
-          "S3Key": "serverless/my-service/dev/1775636425759-2026-04-08T08:20:25.759Z/my-service.zip"
+          "S3Key": "serverless/my-service/dev/1776096895353-2026-04-13T16:14:55.353Z/my-service.zip"
         },
         "Handler": "handlers/handler.users",
         "Runtime": "nodejs20.x",
@@ -187,7 +187,7 @@
       "Properties": {
         "Code": {
           "S3Bucket": "serverless-framework-deployments-ap-south-1-6938da3a-6576",
-          "S3Key": "serverless/my-service/dev/1775636425759-2026-04-08T08:20:25.759Z/my-service.zip"
+          "S3Key": "serverless/my-service/dev/1776096895353-2026-04-13T16:14:55.353Z/my-service.zip"
         },
         "Handler": "handlers/handler.createUser",
         "Runtime": "nodejs20.x",

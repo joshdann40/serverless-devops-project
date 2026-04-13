@@ -1,6 +1,6 @@
 {
   "/home/ubuntu/serverless-project/clean-serverless/serverless.yml": {
-    "versionFramework": "4.33.3",
+    "versionFramework": "4.34.0",
     "servicePath": "/home/ubuntu/serverless-project/clean-serverless/serverless.yml",
     "serviceConfigFileName": "serverless.yml",
     "service": {
@@ -148,7 +148,7 @@
               "Properties": {
                 "Code": {
                   "S3Bucket": "serverless-framework-deployments-ap-south-1-6938da3a-6576",
-                  "S3Key": "serverless/my-service/dev/1775636425759-2026-04-08T08:20:25.759Z/my-service.zip"
+                  "S3Key": "serverless/my-service/dev/1776096895353-2026-04-13T16:14:55.353Z/my-service.zip"
                 },
                 "Handler": "handlers/handler.hello",
                 "Runtime": "nodejs20.x",
@@ -171,7 +171,7 @@
               "Properties": {
                 "Code": {
                   "S3Bucket": "serverless-framework-deployments-ap-south-1-6938da3a-6576",
-                  "S3Key": "serverless/my-service/dev/1775636425759-2026-04-08T08:20:25.759Z/my-service.zip"
+                  "S3Key": "serverless/my-service/dev/1776096895353-2026-04-13T16:14:55.353Z/my-service.zip"
                 },
                 "Handler": "handlers/handler.health",
                 "Runtime": "nodejs20.x",
@@ -194,7 +194,7 @@
               "Properties": {
                 "Code": {
                   "S3Bucket": "serverless-framework-deployments-ap-south-1-6938da3a-6576",
-                  "S3Key": "serverless/my-service/dev/1775636425759-2026-04-08T08:20:25.759Z/my-service.zip"
+                  "S3Key": "serverless/my-service/dev/1776096895353-2026-04-13T16:14:55.353Z/my-service.zip"
                 },
                 "Handler": "handlers/handler.users",
                 "Runtime": "nodejs20.x",
@@ -217,7 +217,7 @@
               "Properties": {
                 "Code": {
                   "S3Bucket": "serverless-framework-deployments-ap-south-1-6938da3a-6576",
-                  "S3Key": "serverless/my-service/dev/1775636425759-2026-04-08T08:20:25.759Z/my-service.zip"
+                  "S3Key": "serverless/my-service/dev/1776096895353-2026-04-13T16:14:55.353Z/my-service.zip"
                 },
                 "Handler": "handlers/handler.createUser",
                 "Runtime": "nodejs20.x",
@@ -944,7 +944,7 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "serverless-framework-deployments-ap-south-1-6938da3a-6576",
-                "S3Key": "serverless/my-service/dev/1775636425759-2026-04-08T08:20:25.759Z/my-service.zip"
+                "S3Key": "serverless/my-service/dev/1776096895353-2026-04-13T16:14:55.353Z/my-service.zip"
               },
               "Handler": "handlers/handler.hello",
               "Runtime": "nodejs20.x",
@@ -967,7 +967,7 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "serverless-framework-deployments-ap-south-1-6938da3a-6576",
-                "S3Key": "serverless/my-service/dev/1775636425759-2026-04-08T08:20:25.759Z/my-service.zip"
+                "S3Key": "serverless/my-service/dev/1776096895353-2026-04-13T16:14:55.353Z/my-service.zip"
               },
               "Handler": "handlers/handler.health",
               "Runtime": "nodejs20.x",
@@ -990,7 +990,7 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "serverless-framework-deployments-ap-south-1-6938da3a-6576",
-                "S3Key": "serverless/my-service/dev/1775636425759-2026-04-08T08:20:25.759Z/my-service.zip"
+                "S3Key": "serverless/my-service/dev/1776096895353-2026-04-13T16:14:55.353Z/my-service.zip"
               },
               "Handler": "handlers/handler.users",
               "Runtime": "nodejs20.x",
@@ -1013,7 +1013,7 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "serverless-framework-deployments-ap-south-1-6938da3a-6576",
-                "S3Key": "serverless/my-service/dev/1775636425759-2026-04-08T08:20:25.759Z/my-service.zip"
+                "S3Key": "serverless/my-service/dev/1776096895353-2026-04-13T16:14:55.353Z/my-service.zip"
               },
               "Handler": "handlers/handler.createUser",
               "Runtime": "nodejs20.x",
@@ -1517,24 +1517,24 @@
     "serviceProviderAwsCfStackName": "my-service-dev",
     "serviceProviderAwsCfStackId": "arn:aws:cloudformation:ap-south-1:513691871761:stack/my-service-dev/424ef060-3253-11f1-8fa8-0adb57922049",
     "serviceProviderAwsCfStackCreated": "2026-04-07T07:27:40.850Z",
-    "serviceProviderAwsCfStackUpdated": "2026-04-07T11:24:20.752Z",
+    "serviceProviderAwsCfStackUpdated": "2026-04-08T08:20:39.756Z",
     "serviceProviderAwsCfStackStatus": "UPDATE_COMPLETE",
     "serviceProviderAwsCfStackOutputs": [
       {
         "OutputKey": "HelloLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:ap-south-1:513691871761:function:my-service-dev-hello:5",
+        "OutputValue": "arn:aws:lambda:ap-south-1:513691871761:function:my-service-dev-hello:6",
         "Description": "Current Lambda function version",
         "ExportName": "sls-my-service-dev-HelloLambdaFunctionQualifiedArn"
       },
       {
         "OutputKey": "HealthLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:ap-south-1:513691871761:function:my-service-dev-health:3",
+        "OutputValue": "arn:aws:lambda:ap-south-1:513691871761:function:my-service-dev-health:4",
         "Description": "Current Lambda function version",
         "ExportName": "sls-my-service-dev-HealthLambdaFunctionQualifiedArn"
       },
       {
         "OutputKey": "CreateUserLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:ap-south-1:513691871761:function:my-service-dev-createUser:1",
+        "OutputValue": "arn:aws:lambda:ap-south-1:513691871761:function:my-service-dev-createUser:2",
         "Description": "Current Lambda function version",
         "ExportName": "sls-my-service-dev-CreateUserLambdaFunctionQualifiedArn"
       },
@@ -1551,7 +1551,7 @@
       },
       {
         "OutputKey": "UsersLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:ap-south-1:513691871761:function:my-service-dev-users:3",
+        "OutputValue": "arn:aws:lambda:ap-south-1:513691871761:function:my-service-dev-users:4",
         "Description": "Current Lambda function version",
         "ExportName": "sls-my-service-dev-UsersLambdaFunctionQualifiedArn"
       },
@@ -1682,7 +1682,7 @@
           "Properties": {
             "Code": {
               "S3Bucket": "serverless-framework-deployments-ap-south-1-6938da3a-6576",
-              "S3Key": "serverless/my-service/dev/1775636425759-2026-04-08T08:20:25.759Z/my-service.zip"
+              "S3Key": "serverless/my-service/dev/1776096895353-2026-04-13T16:14:55.353Z/my-service.zip"
             },
             "Handler": "handlers/handler.hello",
             "Runtime": "nodejs20.x",
@@ -1705,7 +1705,7 @@
           "Properties": {
             "Code": {
               "S3Bucket": "serverless-framework-deployments-ap-south-1-6938da3a-6576",
-              "S3Key": "serverless/my-service/dev/1775636425759-2026-04-08T08:20:25.759Z/my-service.zip"
+              "S3Key": "serverless/my-service/dev/1776096895353-2026-04-13T16:14:55.353Z/my-service.zip"
             },
             "Handler": "handlers/handler.health",
             "Runtime": "nodejs20.x",
@@ -1728,7 +1728,7 @@
           "Properties": {
             "Code": {
               "S3Bucket": "serverless-framework-deployments-ap-south-1-6938da3a-6576",
-              "S3Key": "serverless/my-service/dev/1775636425759-2026-04-08T08:20:25.759Z/my-service.zip"
+              "S3Key": "serverless/my-service/dev/1776096895353-2026-04-13T16:14:55.353Z/my-service.zip"
             },
             "Handler": "handlers/handler.users",
             "Runtime": "nodejs20.x",
@@ -1751,7 +1751,7 @@
           "Properties": {
             "Code": {
               "S3Bucket": "serverless-framework-deployments-ap-south-1-6938da3a-6576",
-              "S3Key": "serverless/my-service/dev/1775636425759-2026-04-08T08:20:25.759Z/my-service.zip"
+              "S3Key": "serverless/my-service/dev/1776096895353-2026-04-13T16:14:55.353Z/my-service.zip"
             },
             "Handler": "handlers/handler.createUser",
             "Runtime": "nodejs20.x",
