@@ -1,28 +1,38 @@
-steps:
-  - name: Checkout Code
-    uses: actions/checkout@v3
+name: Deploy Serverless App
 
-  - name: Setup Node.js
-    uses: actions/setup-node@v3
-    with:
-      node-version: 20
+on:
+  push:
+    branches:
+      - main
 
-  - name: Install Dependencies
-    run: npm install
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
 
-  - name: Install Serverless Framework v3
-    run: npm install -g serverless@3
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
 
-  # 🔍 DEBUG STEP (ADD THIS)
-  - name: Debug Secrets
-    run: echo "Secrets loaded"
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
 
-  - name: Configure AWS Credentials
-    uses: aws-actions/configure-aws-credentials@v4
-    with:
-      aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-      aws-region: ap-south-1
+      - name: Install Dependencies
+        run: npm install
 
-  - name: Deploy to AWS
-    run: serverless deploy --stage dev
+      - name: Install Serverless Framework v3
+        run: npm install -g serverless@3
+
+      - name: Debug Step
+        run: echo "Pipeline running"
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ap-south-1
+
+      - name: Deploy to AWS
+        run: serverless deploy --stage dev
