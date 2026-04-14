@@ -1,14 +1,35 @@
-- name: Debug Step
-  run: echo "Pipeline running"
+name: Deploy Serverless App
 
-- name: Check AWS Key Length
-  run: |
-    echo "Access Key Length:"
-    echo ${#AWS_ACCESS_KEY_ID}
+on:
+  push:
+    branches:
+      - main
 
-- name: Configure AWS Credentials
-  uses: aws-actions/configure-aws-credentials@v4
-  with:
-    aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-    aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-    aws-region: ap-south-1
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Install Serverless Framework v3
+        run: npm install -g serverless@3
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ap-south-1
+
+      - name: Deploy to AWS
+        run: serverless deploy --stage dev
